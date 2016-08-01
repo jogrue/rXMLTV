@@ -242,7 +242,22 @@ require("dplyr")
 
 #### External functions for parsing XMLTV files --------------------------------
 
-# Reads an XMLTV file and returns its content in a raw XMLTV data.frame
+#' @title Reads an XMLTV file
+#'
+#' @description
+#' \code{ReadXmltvFile} reads one XMLTV file and returns its content in data
+#' frame.
+#'
+#' @details
+#' The XMLTV file can be tested before reading it by using
+#' \code{\link{TestXmltvFile}}. The returned data frame inherits class
+#' "xmltv.data.raw".
+#'
+#' @param xmltv.file is the full path to the XMLTV file that should be read.
+#' @param verbose If TRUE the functions prints the full path of the the
+#' processed file. Defaults to FALSE.
+#'
+#' @export
 ReadXmltvFile <- function(xmltv.file, verbose = FALSE) {
   if (verbose == TRUE) {
     print(xmltv.file)

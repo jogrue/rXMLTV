@@ -3,7 +3,9 @@ Title: R Package for Reading XMLTV Files (xmltv.org) in R.
 Version: 0.0.0.1
 Authors@R: person("Johann", "Gründl", email = "mail@johanngruendl.at", role = c("aut", "cre"))
 Description: R package for reading XMLTV files (see xmltv.org) in R.
-Depends: R (>= 3.3.1)
+Depends:
+    R (>= 3.3.1)
 License: MIT License
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 5.0.1
